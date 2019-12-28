@@ -1,20 +1,20 @@
 Windows Registry Editor Version 5.00
  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\cmd_here]
-@="ÔÚ´Ë´¦´ò¿ªÃüÁîÐÐ"
+@="åœ¨æ­¤å¤„æ‰“å¼€å‘½ä»¤è¡Œ"
 "Icon"="cmd.exe"
  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\cmd_here\command]
 @="\"C:\\Windows\\System32\\cmd.exe\""
  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\cmdPrompt]
-@="ÔÚ´Ë´¦´ò¿ªÃüÁîÐÐ"
+@="åœ¨æ­¤å¤„æ‰“å¼€å‘½ä»¤è¡Œ"
  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\cmdPrompt\command]
 @="\"C:\\Windows\\System32\\cmd.exe\" \"cd %1\""
  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\cmd_here]
-@="ÔÚ´Ë´¦´ò¿ªÃüÁîÐÐ"
+@="åœ¨æ­¤å¤„æ‰“å¼€å‘½ä»¤è¡Œ"
 "Icon"="cmd.exe"
  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\cmd_here\command]

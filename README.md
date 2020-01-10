@@ -1,2 +1,0 @@
-# Lerning
-Program lerning

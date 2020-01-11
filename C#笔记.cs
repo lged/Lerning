@@ -39,17 +39,13 @@ class A : IDisposable
     }
 }
 
-new A(); 会
+new A();
 using (A a = new A()) 
 {
 }
 Console.WriteLine("TEST");
 
-输出：
-Disposed!
-TEST
-Deleted!
-Deleted!
+输出：Disposed! TEST Deleted! Deleted!
 即加了 using 的 Dispose 会最先调用，而析构函数会在最后释放类时调用
 #endregion
 

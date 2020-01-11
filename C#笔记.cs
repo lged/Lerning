@@ -69,6 +69,12 @@ public static void Print<T>(T v) //泛型方法
 }
 Print(111);
 Print("abc");
+
+public static void Print<Ti, Tj>(Ti a, Tj b)
+{
+    Console.WriteLine("{0}, {1}", a, b);
+}
+Print(111, "abc");
 #endregion
 
 

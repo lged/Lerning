@@ -62,11 +62,17 @@ class A<T>
         Console.WriteLine(v);
     }
 }
-
 A<string> a1 = new A<string>();
 a1.Print("string");
 A<int> a2 = new A<int>();
 a2.Print(123);
+
+public static void Print<T>(T v) //泛型方法
+{
+    Console.WriteLine(v);
+}
+Print(111);
+Print("abc");
 #endregion
 
 

@@ -1,4 +1,4 @@
-//遍历属性
+#region 遍历属性
 Type t = typeof(Colors);
 PropertyInfo[] pInfo = t.GetProperties();
 foreach (PropertyInfo pi in pInfo)
@@ -6,18 +6,20 @@ foreach (PropertyInfo pi in pInfo)
     Color c = (Color)ColorConverter.ConvertFromString(pi.Name);
     ……
 }
+#endregion
 
 
-//yield
+#region yield
 public static IEnumerable<int> getOdds(int n)
 {
     for (int i=0; i<=n; i++)
         if (i % 2 != 0)
             yield return i;
 }
+#endregion
 
 
-//让接口实现方法
+#region 让接口实现方法
 interface IMy
 {
 }
@@ -42,3 +44,4 @@ class MyClass : IMy
         this.Func(12, 35);
     }
 }
+#endregion

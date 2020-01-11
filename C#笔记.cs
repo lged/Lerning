@@ -54,6 +54,22 @@ Deleted!
 #endregion
 
 
+#region 泛型
+class A<T>
+{
+    public void Print(T v)
+    {
+        Console.WriteLine(v);
+    }
+}
+
+A<string> a1 = new A<string>();
+a1.Print("string");
+A<int> a2 = new A<int>();
+a2.Print(123);
+#endregion
+
+
 #region 让接口实现方法
 interface IMy
 {
@@ -71,7 +87,7 @@ static class MyFunc
     }
 }
 
-class MyClass : IMy
+class MyClass : IMy //可同时继承某类以及多个接口的实体方法
 {
     public MyClass()
     {

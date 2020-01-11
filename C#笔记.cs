@@ -26,6 +26,34 @@ public static IEnumerable<int> getOdds(int n)
 #endregion
 
 
+#region IDisposable
+class A : IDisposable
+{
+    ~A()
+    {
+        Console.WriteLine("Deleted!");
+    }
+    public void Dispose()
+    {
+        Console.WriteLine("Disposed!");
+    }
+}
+
+new A(); 会
+using (A a = new A()) 
+{
+}
+Console.WriteLine("TEST");
+
+输出：
+Disposed!
+TEST
+Deleted!
+Deleted!
+即加了 using 的 Dispose 会最先调用，而析构函数会在最后释放类时调用
+#endregion
+
+
 #region 让接口实现方法
 interface IMy
 {

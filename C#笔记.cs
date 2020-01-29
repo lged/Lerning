@@ -20,9 +20,9 @@ public static IEnumerable<int> getOdds(int n)
 
 
 #region virtual abstract
-重写：virtual 在基类可实现方法，派生类可 override 重写
-抽象：abstract 在基类不实现方法，派生类中必须用 override 实现，有 abstract 方法的类必须为 abstract class，且不能直接实例化
-覆盖：new 定义父类的同名方法，即非 virtual 方法
+//重写：virtual 在基类可实现方法，派生类可 override 重写
+//抽象：abstract 在基类不实现方法，派生类中必须用 override 实现，有 abstract 方法的类必须为 abstract class，且不能直接实例化
+//覆盖：new 定义父类的同名方法，即非 virtual 方法
 #endregion
 
 
@@ -45,8 +45,8 @@ using (A a = new A())
 }
 Console.WriteLine("TEST");
 
-输出：Disposed! TEST Deleted! Deleted!
-即加了 using 的 Dispose 会最先调用，而析构函数会在最后释放类时调用
+//输出：Disposed! TEST Deleted! Deleted!
+//即加了 using 的 Dispose 会最先调用，而析构函数会在最后释放类时调用
 #endregion
 
 
@@ -104,3 +104,14 @@ class MyClass : IMy //可同时继承某类以及多个接口的实体方法
     }
 }
 #endregion
+
+
+//函数传递任意参数的方式为 (params object[] arg)，参考string.Format()函数，到maxScript中调用时params直接被忽略掉了
+
+//Alt+Shift+F10 或  Ctrl+. 回车自动实现抽象类
+
+//.Net SDK 调试：先把dll与pdb文件拷贝再启动max，再打断点，再点击 调试 > 附加到进程
+
+//Debug.Print 调试输出
+
+//命令行混淆: confuser.cli -n D:\ConfuserExConfig.crproj

@@ -112,6 +112,6 @@ class MyClass : IMy //可同时继承某类以及多个接口的实体方法
 
 //.Net SDK 调试：先把dll与pdb文件拷贝再启动max，再打断点，再点击 调试 > 附加到进程
 
-//Debug.Print 调试输出
+//Debug.Print 只有在调试时才会输出
 
 //命令行混淆: confuser.cli -n D:\ConfuserExConfig.crproj

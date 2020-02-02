@@ -110,7 +110,7 @@ class MyClass : IMy //可同时继承某类以及多个接口的实体方法
 
 //Alt+Shift+F10 或  Ctrl+. 回车自动实现抽象类
 
-//.Net SDK 调试：先把dll与pdb文件拷贝再启动max，再打断点，再点击 调试 > 附加到进程
+//.Net SDK 调试：先把dll与pdb文件拷贝再启动max，再打断点，再点击 调试 > 附加到进程。pdb文件的生成：项目属性>生成>高级>调试信息：pdb-only
 
 //Debug.Print 只有在调试时才会输出
 

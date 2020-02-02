@@ -115,3 +115,5 @@ class MyClass : IMy //可同时继承某类以及多个接口的实体方法
 //Debug.Print 只有在调试时才会输出
 
 //命令行混淆: confuser.cli -n D:\ConfuserExConfig.crproj
+
+//foreach 里删除 list 的 item 是不允许的，应该用 for 降序删除

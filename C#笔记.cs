@@ -117,3 +117,21 @@ class MyClass : IMy //可同时继承某类以及多个接口的实体方法
 //命令行混淆: confuser.cli -n D:\ConfuserExConfig.crproj
 
 //foreach 里删除 list 的 item 是不允许的，应该用 for 降序删除
+
+
+#region 字符串辅助类
+static class StringExtentions
+{
+    public static string ToA(this string str)
+    {
+        return "A";
+    }
+    public static string ToA(this int num, int b)
+    {
+        return num + b + "A";
+    }
+}
+
+"x".ToA()
+2.ToA(1)
+#endregion

@@ -135,3 +135,22 @@ static class StringExtentions
 "x".ToA()
 2.ToA(1)
 #endregion
+
+
+#region JS调用C#
+//先在程序集信息中设置“使程序集COM可见”
+using System.Runtime.InteropServices;
+using System.Security.Permissions;
+[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+[ComVisible(true)]
+public class JavaScript
+{
+    public void Func()
+    {
+        ...
+    }
+}
+webBrowser1.ObjectForScripting = new JavaScript(); //公开对象
+
+//JS: window.external.Func();
+#endregion

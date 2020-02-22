@@ -1,0 +1,3 @@
+1，删除 commit：
+  git rebase -i 52c6baece4d15d797e1686d2db5ca976ca97be26
+  再将打开的文件头部的 pick 改为 drop，保存关闭即可

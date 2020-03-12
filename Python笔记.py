@@ -27,4 +27,6 @@ print '\033[1;46mHighlighted Cyan like Caribbean\033[1;m'
 print '\033[1;47mHighlighted Gray like Ghost\033[1;m'
 print '\033[1;48mHighlighted Crimson like Chianti\033[1;m'
 
-
+# 复制文本
+import pyperclip
+pyperclip.copy('abc')

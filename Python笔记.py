@@ -46,3 +46,5 @@ python setup.py build_ext --inplace # Linux中生成hello.so，Windows中生成h
 Windows中要安装VCForPython27，并对msvc9compiler.py与msvccompiler.py更改get_build_version：9.0，find_vcvarsall：r'C:\Users\xxx\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\vcvarsall.bat'
 详情见https://www.cnblogs.com/lazyboy/p/4017567.html
 
+# 语法榶
+lst[::n] # list中每隔n取1个，-1即反转

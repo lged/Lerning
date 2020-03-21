@@ -30,3 +30,19 @@ print '\033[1;48mHighlighted Crimson like Chianti\033[1;m'
 # 复制文本
 import pyperclip
 pyperclip.copy('abc')
+
+# Cython配置
+pip install cython
+# file: hello.pyx
+def say_hello_to(name):
+    print("Hello %s!" % name)
+# file: setup.py
+from distutils.core import setup
+from Cython.Build import cythonize
+setup(ext_modules=cythonize("hello.pyx"))
+python setup.py build_ext --inplace # Linux中生成hello.so，Windows中生成hello.pyd
+>>> import hello
+>>> hello.say_hello_to('Sir')
+Windows中要安装VCForPython27，并对msvc9compiler.py与msvccompiler.py更改get_build_version：9.0，find_vcvarsall：r'C:\Users\xxx\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\vcvarsall.bat'
+详情见https://www.cnblogs.com/lazyboy/p/4017567.html
+

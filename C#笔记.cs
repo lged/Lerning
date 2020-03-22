@@ -154,3 +154,8 @@ webBrowser1.ObjectForScripting = new JavaScript(); //公开对象
 
 //JS: window.external.Func();
 #endregion
+
+
+#region De4dot
+字符串 de4dot file --strtyp delegate --strtok 0x0600129A
+#endregion

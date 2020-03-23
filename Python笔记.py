@@ -49,3 +49,8 @@ Windows中要安装VCForPython27，并对msvc9compiler.py与msvccompiler.py更�
 # 语法
 lst[::n] # list中每隔n取1个，-1即反转
 a, b, c = 1, 2, 3
+
+# Pyinstaller
+打包 pyinstaller test.py -F -i test.ico
+解包 python pyinstxtractor.py test.exe # https://sourceforge.net/projects/pyinstallerextractor/
+再用 uncompyle2 或 EasyPythonDecompiler 解 pyc

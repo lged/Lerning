@@ -54,3 +54,4 @@ a, b, c = 1, 2, 3
 打包 pyinstaller test.py -F -i test.ico
 解包 python pyinstxtractor.py test.exe # https://sourceforge.net/projects/pyinstallerextractor/
 再用 uncompyle2 或 EasyPythonDecompiler 解 pyc
+保护 将引用的 py 编译为 pyd

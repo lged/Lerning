@@ -74,3 +74,4 @@ venv\scripts\activate deactivate
 # 已有2.7后安装3.6
 将 3.6 的 python.exe 改为 python3.exe，删除其 scripts/pip.exe，之后分别执行的是 python3 与 pip3
 创建对应虚拟环境 virtualenv -p python3 36
+Pycharm: File > Settings > Project xxx > Project Interpreter > 选择对应版本

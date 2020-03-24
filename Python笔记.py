@@ -70,3 +70,7 @@ Pycharm 代码折叠 Ctrl+Alt+T，Ctrl+Alt+L 自动排版，错误定位 F2
 pip install virtualenv
 pip install virtualenvwrapper
 venv\scripts\activate deactivate
+
+# 已有2.7后安装3.6
+将 3.6 的 python.exe 改为 python3.exe，删除其 scripts/pip.exe，之后分别执行的是 python3 与 pip3
+创建对应虚拟环境 virtualenv -p python3 36

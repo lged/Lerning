@@ -66,6 +66,7 @@ sys.path.append(r'D:\code\myproj')，就可以from file import class了
 # 操作
 Notepad++缩进：设置 > 首选项 > 语言 > Python > Python > 替换为空格 # 不要出现tab
 Pycharm 代码折叠 Ctrl+Alt+T，Ctrl+Alt+L 自动排版，错误定位 F2
+Pycharm 中输出 main 会自动补全 if __name__ == '__main__':
 
 # Windows中虚拟环境
 pip install virtualenv

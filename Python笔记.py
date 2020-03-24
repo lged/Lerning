@@ -50,8 +50,19 @@ Windows中要安装VCForPython27，并对msvc9compiler.py与msvccompiler.py更�
 lst[::n] # list中每隔n取1个，-1即反转
 a, b, c = 1, 2, 3
 
+# 经验
+re的反向界定只能使用定长文本，不定长的可用regex
+安装pycrypto-2.6.win32-py2.7后要将C:\Python27\Lib\site-packages\crypto改为Crypto
+sys.path.append(r'D:\code\myproj')，就可以from file import class了
+
 # Pyinstaller
 打包 pyinstaller test.py -F -i test.ico
 解包 python pyinstxtractor.py test.exe # https://sourceforge.net/projects/pyinstallerextractor/
 再用 uncompyle2 或 EasyPythonDecompiler 解 pyc
 保护 将引用的 py 编译为 pyd
+
+# 操作
+Notepad++缩进：设置 > 首选项 > 语言 > Python > Python > 替换为空格 # 不要出现tab
+Pycharm 代码折叠 Ctrl+Alt+T，Ctrl+Alt+L 自动排版，错误定位 F2
+
+

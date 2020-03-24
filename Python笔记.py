@@ -49,6 +49,7 @@ Windows中要安装VCForPython27，并对msvc9compiler.py与msvccompiler.py更�
 # 语法
 lst[::n] # list中每隔n取1个，-1即反转
 a, b, c = 1, 2, 3
+a = [1,2,3,4]; b = ['a','b','c','d']; for i, j in zip(a, b): print i, j # zip(a, b) -> [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
 
 # 经验
 re的反向界定只能使用定长文本，不定长的可用regex

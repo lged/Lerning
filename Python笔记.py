@@ -54,6 +54,7 @@ a, b, c = 1, 2, 3
 re的反向界定只能使用定长文本，不定长的可用regex
 安装pycrypto-2.6.win32-py2.7后要将C:\Python27\Lib\site-packages\crypto改为Crypto
 sys.path.append(r'D:\code\myproj')，就可以from file import class了
+2.7中安装pyqt5：pip install python-qt5 -i https://pypi.douban.com/simple
 
 # Pyinstaller
 打包 pyinstaller test.py -F -i test.ico

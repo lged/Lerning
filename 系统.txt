@@ -1,0 +1,2 @@
+有网但网页打不开的解决办法
+CMD: ipconfig /flushdns

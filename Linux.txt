@@ -1,0 +1,11 @@
+#nginx切割access.log
+1: vim cut_logs.sh
+#!/bin/bash
+log_path=/xxx/log/nginx/access.log
+save_path=/xxx/log/nginx/access_$(date +%m%d -d 'yesterday').log
+cp $log_path $save_path && echo > $log_path
+find /alidata/log/nginx -name "access_*.log" -mtime +15 | xargs rm -f #删除15天之前的
+2: 添加定时任务，每天0时执行
+crontab -e
+0 0 * * * bash /xxx/log/cut_logs.sh
+

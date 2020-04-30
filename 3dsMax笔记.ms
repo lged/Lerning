@@ -12,5 +12,6 @@ thehold.accept "ok man"
 
 # 函数
 showinterface
-
+windows.snapshot hwnd 截图
+snapshot obj 创建快照实例，可用于extract
 

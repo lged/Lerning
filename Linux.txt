@@ -9,3 +9,5 @@ find /alidata/log/nginx -name "access_*.log" -mtime +15 | xargs rm -f #删除15�
 crontab -e
 0 0 * * * bash /xxx/log/cut_logs.sh
 
+查看文件的最后100行：tail -n 100 file
+

@@ -10,4 +10,5 @@ crontab -e
 0 0 * * * bash /xxx/log/cut_logs.sh
 
 查看文件的最后100行：tail -n 100 file
-
+带单位列出目录：ls -lh
+显示目录内文件夹大小：du -sh *

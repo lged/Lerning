@@ -12,3 +12,7 @@ crontab -e
 查看文件的最后100行：tail -n 100 file
 带单位列出目录：ls -lh
 显示目录内文件夹大小：du -sh *
+删除所有文件与文件夹：rm -rf *
+统计文件夹下文件个数，包括子文件：ls -lR | grep "^-"| wc -l
+统计文件夹下目录个数，包括子目录：ls -lR | grep "^d"| wc -l
+查找文件：locate xx

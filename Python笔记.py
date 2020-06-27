@@ -59,7 +59,7 @@ sys.path.append(r'D:\code\myproj')，就可以from file import class了
 
 # Pyinstaller
 打包 pyinstaller test.py -F -i test.ico
-解包 python pyinstxtractor.py test.exe # https://sourceforge.net/projects/pyinstallerextractor/
+解包 python pyinstxtractor.py test.exe 或直接拖上去 # https://sourceforge.net/projects/pyinstallerextractor/
 再用 uncompyle2 或 EasyPythonDecompiler 解 pyc
 保护 将引用的 py 编译为 pyd
 

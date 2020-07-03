@@ -1,2 +1,10 @@
 有网但网页打不开的解决办法
 CMD: ipconfig /flushdns
+
+添加通用右键菜单
+[HKEY_CLASSES_ROOT\*\shell\Python3]
+@="Python3 运行"
+"icon"="C:\\Python36\\python3.exe"
+[HKEY_CLASSES_ROOT\*\shell\Python3\command]
+@="C:\\Python36\\python3.exe %1"
+

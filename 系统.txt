@@ -9,8 +9,14 @@ CMD: ipconfig /flushdns
 @="C:\\Python36\\python3.exe %1"
 
 添加特定格式右键菜单
-[HKEY_CLASSES_ROOT\Python.File\shell\OpenWithPython36]
+[HKEY_CLASSES_ROOT\Python.File\shell\OpenWithPython36]  # Python.File 根据.py项的默认值
 @="Python3 运行"
 "icon"="C:\\Python36\\python3.exe"
 [HKEY_CLASSES_ROOT\Python.File\shell\OpenWithPython36\command]
 @="C:\\Python36\\python3.exe %1"
+
+[HKEY_CLASSES_ROOT\3dsmax\Shell\2014]
+@="Open with 3ds Max 2014"
+"icon"="E:\\Program Files\\max2014\\3ds Max 2014\\Icons\\icon_main.ico"
+[HKEY_CLASSES_ROOT\3dsmax\Shell\2014\command]
+@="E:\\Program Files\\max2014\\3ds Max 2014\\3dsmax.exe"

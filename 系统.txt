@@ -8,3 +8,9 @@ CMD: ipconfig /flushdns
 [HKEY_CLASSES_ROOT\*\shell\Python3\command]
 @="C:\\Python36\\python3.exe %1"
 
+添加特定格式右键菜单
+[HKEY_CLASSES_ROOT\Python.File\shell\OpenWithPython36]
+@="Python3 运行"
+"icon"="C:\\Python36\\python3.exe"
+[HKEY_CLASSES_ROOT\Python.File\shell\OpenWithPython36\command]
+@="C:\\Python36\\python3.exe %1"

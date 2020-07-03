@@ -19,4 +19,4 @@ CMD: ipconfig /flushdns
 @="Open with 3ds Max 2014"
 "icon"="E:\\Program Files\\max2014\\3ds Max 2014\\Icons\\icon_main.ico"
 [HKEY_CLASSES_ROOT\3dsmax\Shell\2014\command]
-@="E:\\Program Files\\max2014\\3ds Max 2014\\3dsmax.exe"
+@="\"E:\\Program Files\\max2014\\3ds Max 2014\\3dsmax.exe\" \"%1\""

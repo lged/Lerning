@@ -1,6 +1,7 @@
 有网但网页打不开的解决办法
 CMD: ipconfig /flushdns
 
+
 添加通用右键菜单
 [HKEY_CLASSES_ROOT\*\shell\Python3]
 @="Python3 运行"
@@ -20,3 +21,7 @@ CMD: ipconfig /flushdns
 "icon"="E:\\Program Files\\max2014\\3ds Max 2014\\Icons\\icon_main.ico"
 [HKEY_CLASSES_ROOT\3dsmax\Shell\2014\command]
 @="\"E:\\Program Files\\max2014\\3ds Max 2014\\3dsmax.exe\" \"%1\""
+
+添加新建右键菜单
+[HKEY_CLASSES_ROOT\.py\ShellNew]
+"NullFile"=""

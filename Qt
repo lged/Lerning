@@ -7,4 +7,5 @@
 启动画面：QPixmap pix(":/rsc/welcome.jpg"); QSplashScreen splash(pix); splash.show(); a.processEvents(); ... splash.close();
 样式表：QFile file(":/style.qss"); file.open(QFile::ReadOnly); if (file.isOpen()) {QString style = QLatin1String(file.readAll()); a.setStyleSheet(style);}
 以上都是存于资源文件中。资源无效的解决方法：构建菜单 > 清理 > qmake > 运行。
+.qss必须为utf8格式，最好用外部编辑器
 

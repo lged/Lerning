@@ -3,3 +3,8 @@
 如果代码中有中文：选项>文本编辑器>行为>UTF8 BOM：如果编码是UTF8则添加，QString::fromLocal8Bit(“中文”)。可定义宏 #define u(x) QString::fromLocal8Bit(x)
 
 设置图标：先将app.ico拷贝到项目，再在.pro中加 RC_ICONS = app.ico
+
+启动画面：QPixmap pix(":/rsc/welcome.jpg"); QSplashScreen splash(pix); splash.show(); a.processEvents(); ... splash.close();
+样式表：QFile file(":/style.qss"); file.open(QFile::ReadOnly); if (file.isOpen()) {QString style = QLatin1String(file.readAll()); a.setStyleSheet(style);}
+以上都是存于资源文件中。资源无效的解决方法：构建菜单 > 清理 > qmake > 运行。
+

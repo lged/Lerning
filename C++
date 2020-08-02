@@ -1,0 +1,7 @@
+【GLFW配置】
+1，下载GLFW：https://www.glfw.org/download.html。32-bit Windows Binaries
+2，下载GLAD：https://glad.dav1d.de/。C/C++；OpenGL；Version 3.3；Core；Generate a loader >> GENERATE
+3，把 GLFW、KHR、glad 三个文件夹拷贝到 vs2015/VC/include 中，glfw3.lib、glfw3dll.lib拷贝到 vs2015/VC/lib 中
+4，把 glad.c 拷贝到项目并添加，(把 glfw3.dll 拷贝到 Debug/Release，好像不必要)
+5，先 #include <glad/glad.h>，再 #include <GLFW/glfw3.h>。项目属性>链接器>输入>附加依赖项：glfw3.lib
+

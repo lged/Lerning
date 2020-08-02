@@ -5,3 +5,7 @@
 4，把 glad.c 拷贝到项目并添加，(把 glfw3.dll 拷贝到 Debug/Release，好像不必要)
 5，先 #include <glad/glad.h>，再 #include <GLFW/glfw3.h>。项目属性>链接器>输入>附加依赖项：glfw3.lib
 
+【请按任意键继续】
+由空项目创建的项目运行完控制台自动关闭的解决办法：项目属性>链接器>系统>子系统：控制台
+如果是窗体程序不要控制台，则子系统选择窗口，并设置 高级>入口点：mainCRTStartup
+

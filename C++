@@ -9,3 +9,15 @@
 由空项目创建的项目运行完控制台自动关闭的解决办法：项目属性>链接器>系统>子系统：控制台
 如果是窗体程序不要控制台，则子系统选择窗口，并设置 高级>入口点：mainCRTStartup
 
+template <class T>
+class A
+{
+public:
+    A(T v){
+        cout << v << endl;
+    }
+};
+A<char*> a("Hello");
+A<int> b(10);
+A<float> c(3.14);
+

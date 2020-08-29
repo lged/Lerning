@@ -27,3 +27,22 @@ using namespace myNamaspace; 命名空间内所有可见
 using myNamaspace::value; 只让某个可见
 namespace mn = myNamaspace; 缩写：mn::value
 
+【文件读写】
+{
+    ofstream fo;
+    fo.open("d:\\ttt.txt", ios::out);
+    fo << "You good!\n你好！";
+    fo.close();
+
+    vector<string> aa;
+    string a;
+    ifstream fi;
+    fi.open("d:\\ttt.txt", ios::in);
+    while(getline(fi, a, '\n'))
+        aa.push_back(a);
+    fi.close();
+    for (int i = 0; i < aa.size(); i++)
+        cout << aa[i] << endl;
+    return 0;
+}
+

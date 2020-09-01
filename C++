@@ -46,3 +46,8 @@ namespace mn = myNamaspace; 缩写：mn::value
     return 0;
 }
 
+【泛型指针】
+int c = 12; 
+void* p = &c; 
+cout << *(static_cast<int*>(p)) <<endl;
+

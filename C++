@@ -43,7 +43,6 @@ namespace mn = myNamaspace; 缩写：mn::value
     fi.close();
     for (int i = 0; i < aa.size(); i++)
         cout << aa[i] << endl;
-    return 0;
 }
 
 【泛型指针】
@@ -51,3 +50,11 @@ int c = 12;
 void* p = &c; 
 cout << *(static_cast<int*>(p)) <<endl;
 
+【链表】
+{
+    list<int> x;
+    x.push_back(135);
+    x.push_back(246);
+    for (list<int>::iterator i = x.begin(); i != x.end(); i++)
+        cout << *i << endl;
+}

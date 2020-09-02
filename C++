@@ -51,10 +51,3 @@ void* p = &c;
 cout << *(static_cast<int*>(p)) <<endl;
 
 【链表】
-{
-    list<int> x;
-    x.push_back(135);
-    x.push_back(246);
-    for (list<int>::iterator i = x.begin(); i != x.end(); i++)
-        cout << *i << endl;
-}

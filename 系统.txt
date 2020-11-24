@@ -25,3 +25,6 @@ CMD: ipconfig /flushdns
 添加新建右键菜单
 [HKEY_CLASSES_ROOT\.py\ShellNew]
 "NullFile"=""
+
+禁止程序的运行
+gpedit.msc > 用户配置 > 管理模板 > 系统 > 不运行指定的 Windows 程序 > 已启用 > 显示 > xxx.exe

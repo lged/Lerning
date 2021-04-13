@@ -159,3 +159,13 @@ webBrowser1.ObjectForScripting = new JavaScript(); //公开对象
 #region De4dot
 字符串 de4dot file --strtyp delegate --strtok 0x0600129A //失败则先清空cctor
 #endregion
+
+#region Task
+using System.Threading.Tasks;
+static async Task dodo()
+{
+    await Task.Delay(TimeSpan.FromSeconds(2));
+    Console.WriteLine(1000);
+}
+dodo(); //dodo().Wait();
+#endregion

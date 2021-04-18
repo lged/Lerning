@@ -169,3 +169,8 @@ static async Task dodo()
 }
 dodo(); //dodo().Wait();
 #endregion
+
+//Console中使用system
+[DllImport("msvcrt.dll")]
+static extern bool system(string str);
+system("pause");

@@ -58,3 +58,8 @@ cout << *(static_cast<int*>(p)) <<endl;
     for (list<int>::iterator i = x.begin(); i != x.end(); i++)
         cout << *i << endl;
 }
+
+[操作符重载]
+C& operator > (int i); //链式编程
+void operator()(int, int); //仿函数
+

@@ -15,3 +15,5 @@ showinterface
 windows.snapshot hwnd 截图
 snapshot obj 创建快照实例，可用于extract
 
+
+vscode 自动识别编码：设置中搜索files.autoGuessEncoding勾上
